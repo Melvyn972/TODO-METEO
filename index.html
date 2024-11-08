@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo list & Météo</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Todo list</h1>
+        <form id="task-form" class="mb-4">
+            <div class="input-group">
+                <input type="text" id="task-name" class="form-control" placeholder="Ajouter une nouvelle tâche" required>
+                <div class="input-group-append">
+                    <button type="submit" class="btn btn-primary">Ajouter Tâche</button>
+                </div>
+            </div>
+        </form>
+        <div class="btn-group mb-4" role="group">
+            <button type="button" class="btn btn-secondary" id="filter-all">Toutes</button>
+            <button type="button" class="btn btn-secondary" id="filter-todo">À faire</button>
+            <button type="button" class="btn btn-secondary" id="filter-done">Fait</button>
+        </div>
+        <ul id="task-list" class="list-group"></ul>
+    </div>
+
+    <div class="container mt-5">
+        <h1 class="text-center">Météo</h1>
+        <form id="weather-form" class="mb-4">
+            <div class="input-group">
+                <input type="text" id="city-name" class="form-control" placeholder="Entrez le nom de la ville" required>
+                <div class="input-group-append">
+                    <button type="submit" class="btn btn-primary">Obtenir la Météo</button>
+                </div>
+            </div>
+        </form>
+        <div id="weather-info" class="d-none">
+            <h2 class="text-center" id="city-title"></h2>
+            <div id="current-weather" class="mb-4"></div>
+            <div id="forecast" class="d-flex justify-content-between"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

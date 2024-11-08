@@ -1,0 +1,90 @@
+body {
+    background-color: #f0f2f5;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #333333;
+    font-weight: bold;
+}
+
+#task-form .input-group, #weather-form .input-group {
+    margin-bottom: 20px;
+}
+
+#task-form .form-control, #weather-form .form-control {
+    border-radius: 20px 0 0 20px;
+}
+
+#task-form .btn-primary, #weather-form .btn-primary {
+    border-radius: 0 20px 20px 0;
+    background-color: #007bff;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+#task-form .btn-primary:hover, #weather-form .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-group .btn {
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-group .btn:hover {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+#task-list .list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#task-list .list-group-item:hover {
+    background-color: #e9ecef;
+    transform: translateY(-2px);
+}
+
+#task-list .list-group-item.done {
+    text-decoration: line-through;
+    color: #6c757d;
+}
+
+#task-list .list-group-item.done:hover {
+    background-color: #d6d8db;
+}
+
+#weather-info {
+    text-align: center;
+}
+
+#forecast .forecast-day {
+    flex: 1;
+    margin: 0 10px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.weather-icon {
+    font-size: 50px;
+    margin-top: 10px;
+}
